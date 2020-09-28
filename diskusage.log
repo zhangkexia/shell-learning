@@ -1,0 +1,9 @@
+Date     IP address     Device    Capacity Used   Free   Percent Status
+hB8s 09/28/20       hB8s 127.0.0.1      /dev/mapper/centos-root 19G      2.4G   16G    13%     ALERT
+hB8s 09/28/20       hB8s 127.0.0.1      /dev/sda1 1.1G     179M   885M   17%     ALERT
+hB8s 09/28/20       hB8s 0.0.0.0        /dev/mapper/centos-root 19G      2.4G   16G    13%     ALERT
+hB8s 09/28/20       hB8s 0.0.0.0        /dev/sda1 1.1G     179M   885M   17%     ALERT
+hB8s 09/28/20       hB8s 127.0.0.1      /dev/mapper/centos-root 19G      2.4G   16G    13%     SAFE
+hB8s 09/28/20       hB8s 127.0.0.1      /dev/sda1 1.1G     179M   885M   17%     SAFE
+hB8s 09/28/20       hB8s 0.0.0.0        /dev/mapper/centos-root 19G      2.4G   16G    13%     SAFE
+hB8s 09/28/20       hB8s 0.0.0.0        /dev/sda1 1.1G     179M   885M   17%     SAFE
