@@ -12,14 +12,14 @@ fi
 
 LOG=/tmp/valid.$$.log
 grep -v "invalid" $AUTHLOG > $LOG
-users=$(grep "Failed password" $LOG |awk '{ print $(NF-5) }' |sort |uniq)
+users=$(grep "Failed password" $LOG |awk '{ print $(NF-5) }' |sort | uniq )
 
 
 printf "%-5s|%-10s|%-10s|%-13s|%-33s|%s\n" "Sr#" "User" "Attemps" "IP address" "Host_Mapping" "Time range"
 
 ucount=0
 
-ip_list="$(egrep -o "[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+\" $LOG |sort |uniq)"
+ip_list="$(egrep -o "[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+" $LOG |sort |uniq)"
 
 for ip in $ip_list;
 do
