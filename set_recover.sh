@@ -33,7 +33,7 @@ while getopts "m:s:h:" opt; do
     esac
 done
 
-#function
+#function here
 function do_setting {
     if [ $# != 2 ]
     then
