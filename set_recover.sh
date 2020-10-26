@@ -6,7 +6,7 @@
 #location: /home/deployer/ or /home/onest/
 
 #var settings
-
+#na
 
 #main code
 #get input
@@ -33,11 +33,13 @@ while getopts "m:s:h:" opt; do
     esac
 done
 
-#function here
+#function
 function do_setting {
-    if [ $# != 2 ]
-    then
+    if [ $# != 2 ];then
         echo "var num not ok!"
+    elif [ $2 == 'check' ];then
+        echo "The current status:"
+        /usr/bin/sudo $1 -s |grep -A 1 health
     else
         /usr/bin/sudo $1 osd $2 nobackfill&&/usr/bin/sudo $1 osd $2 norecover&&echo "$2 ok!"
     fi
